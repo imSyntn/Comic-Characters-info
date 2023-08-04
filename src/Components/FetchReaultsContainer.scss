@@ -1,0 +1,11 @@
+.FetchReaultsContainer {
+    // border: 1px solid rgb(252, 252, 252);
+    height: 100%;
+    box-sizing: border-box;
+    padding-inline: 60px;
+    padding-block: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
