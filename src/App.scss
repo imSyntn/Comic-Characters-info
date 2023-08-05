@@ -16,8 +16,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-    // background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to right bottom, #fef804, #ffce00, #ffa320, #ff793d, #ff5253, #f83a61, #ed206f, #dd007e, #c50084, #aa0089, #8d018c, #6c108d);
 }
 ::-webkit-scrollbar {
 	width: 5px;
@@ -26,5 +25,4 @@ a {
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
     background-image: linear-gradient(to top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
-    // background-image: linear-gradient(to top, #00dbde, #00cfff, #00b8ff, #6a8cff, #fc00ff);
 }

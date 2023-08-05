@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import './CardResults.scss';
 import { Link } from 'react-router-dom';
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-// import AbilityCard from './AbilityCard';
 import { useParams } from 'react-router-dom';
 import { SiPowerautomate } from "react-icons/si";
 
@@ -15,7 +14,6 @@ const CardResults = () => {
             setClickedData(null);
             const idReq = await fetch(`https://superheroapi.com/api/141284608947891/${params.id}`);
             const idRes = await idReq.json();
-            // console.log(idRes);
             setClickedData(idRes);
         } catch (error) {
             alert("Something went wrong");
@@ -31,8 +29,6 @@ const CardResults = () => {
         <Link to={'/'}>
             <BsFillArrowLeftCircleFill />
         </Link>
-
-        {console.log(clickedData)}
 
         {
             clickedData?
@@ -198,20 +194,6 @@ const CardResults = () => {
                                 </div>
                                 <p>{clickedData.work.occupation}</p>
                             </div>
-                            {/* <div className='AbilityCard'>
-                                <div className="ability-icon-name">
-                                    <SiPowerautomate />
-                                    <p>Relatives</p>
-                                </div>
-                                <p>{clickedData.connections.relatives}</p>
-                            </div>
-                            <div className='AbilityCard'>
-                                <div className="ability-icon-name">
-                                    <SiPowerautomate />
-                                    <p>Group Affilation</p>
-                                </div>
-                                <p>{clickedData.connections['group-affiliation']}</p>
-                            </div> */}
                         </div>
                     </div>
                 </div>

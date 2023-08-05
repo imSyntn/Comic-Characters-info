@@ -18,11 +18,9 @@ const Header = () => {
         const request = await fetch(`https://superheroapi.com/api/141284608947891/search/${search}`);
         const response = await request.json();
         const fetchedData = await response.results;
-        // console.log(fetchedData);
         setData(fetchedData)
       }
     } catch (error) {
-      console.log(error)
       alert('Something went wrong. If you are using localHost, then please enable CORS')
     }
   }
@@ -36,14 +34,13 @@ const Header = () => {
   return (
     <DataContext.Provider value={data}>
     <div className='Header'>
-        <h1>nfo</h1>
+        <h1>info</h1>
         <div>
-            <input type="search" placeholder='eg. Ironman...' onChange={(e)=>setSearch(e.target.value)} />
+              <input type="search" placeholder='eg. Ironman...' onChange={(e)=>setSearch(e.target.value)} />
             <div>
                 <ImSearch onClick={initializeSearch} />
             </div>
         </div>
-        {console.log(data)}
     </div>
     <Outlet />
     </DataContext.Provider>

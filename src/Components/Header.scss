@@ -1,5 +1,4 @@
 .Header {
-    // border-bottom: 1px solid rgb(255, 255, 255);
     height: 80px;
     padding-inline: 60px;
     display: flex;
@@ -7,13 +6,10 @@
     justify-content: space-between;
 
     > h1 {
-        &::before {
-            content: 'i';
-            background-image: linear-gradient(to top, #ffffff, #f8d1fc, #ff97d2, #ff517f, #ff0000);
-            background-clip: text;
-            color: transparent;
-            font-size: 32px;
-        }
+        background-image: linear-gradient(to right bottom, #fef804, #ffce00, #ffa320, #ff793d, #ff5253, #f83a61, #ed206f, #dd007e, #c50084, #aa0089, #8d018c, #6c108d);
+        background-clip: text;
+        color: transparent;
+        
     }
 
     > div {
@@ -22,11 +18,9 @@
         width: 400px;
         display: flex;
         align-items: center;
-        // justify-content: space-between;
 
         > input {
             height: 40px;
-            // width: 350px;
             margin-left: 20px;
             width: 100%;
             border: 2px solid grey;
@@ -35,7 +29,7 @@
             padding-left: 20px;
             padding-right: 23px;
             font-size: 20px;
-            color: gray;
+            
         }
 
         > div {
@@ -59,6 +53,17 @@
             &:hover {
                 transform: scale(1.2);
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 527px) {
+    .Header {
+        > div {
+    
+            > input {
+                padding-left: 10px;
             }
         }
     }

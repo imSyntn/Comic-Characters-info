@@ -1,6 +1,6 @@
 .FetchReaultsContainer {
-    // border: 1px solid rgb(252, 252, 252);
     height: 100%;
+    width: 100%;
     box-sizing: border-box;
     padding-inline: 60px;
     padding-block: 50px;
@@ -8,4 +8,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 527px) {
+    .FetchReaultsContainer {
+        padding-inline: 0px;
+        box-sizing: border-box;
+    }
 }

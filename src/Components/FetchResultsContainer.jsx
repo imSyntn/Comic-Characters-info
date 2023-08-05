@@ -7,7 +7,6 @@ import { DataContext } from './Header'
 
 const FetchResultsContainer = () => {
 
-  // const[user, setUser]=useState(true)
   const data = useContext(DataContext);
 
   return (
