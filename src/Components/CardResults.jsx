@@ -8,11 +8,12 @@ import { SiPowerautomate } from "react-icons/si";
 const CardResults = () => {
     const[clickedData, setClickedData]=useState(null);
     const params = useParams();
+    const api_key = process.env.REACT_APP_API;
 
     const idFetch = async ()=>{
         try {
             setClickedData(null);
-            const idReq = await fetch(`https://superheroapi.com/api/141284608947891/${params.id}`);
+            const idReq = await fetch(`https://superheroapi.com/api/${api_key}/${params.id}`);
             const idRes = await idReq.json();
             setClickedData(idRes);
         } catch (error) {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './FetchReaultsContainer.scss'
 import Card from './Card'
 

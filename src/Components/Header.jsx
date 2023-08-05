@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.scss'
 import { Outlet } from 'react-router-dom';
 import { ImSearch } from "react-icons/im";
-import { useState, useEffect, createContext, useContext } from 'react';
+import { useState, useEffect, createContext } from 'react';
 
 export const DataContext = createContext();
 
@@ -10,12 +10,13 @@ const Header = () => {
 
   const[search, setSearch]=useState('');
   const[data, setData]=useState();
+  const api_key = process.env.REACT_APP_API;
 
   const initializeSearch = async()=>{
     try {
       if(search.length>0){
         setData();
-        const request = await fetch(`https://superheroapi.com/api/141284608947891/search/${search}`);
+        const request = await fetch(`https://superheroapi.com/api/${api_key}/search/${search}`);
         const response = await request.json();
         const fetchedData = await response.results;
         setData(fetchedData)
