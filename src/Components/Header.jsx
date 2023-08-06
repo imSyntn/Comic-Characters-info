@@ -16,7 +16,7 @@ const Header = () => {
     try {
       if(search.length>0){
         setData();
-        const request = await fetch(`https://superheroapi.com/api/${api_key}/search/${search}`);
+        const request = await fetch(`https://superheroapi.com/api.php/${api_key}/search/${search}`);
         const response = await request.json();
         const fetchedData = await response.results;
         setData(fetchedData)

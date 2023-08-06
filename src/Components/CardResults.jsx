@@ -13,7 +13,7 @@ const CardResults = () => {
     const idFetch = async ()=>{
         try {
             setClickedData(null);
-            const idReq = await fetch(`https://superheroapi.com/api/${api_key}/${params.id}`);
+            const idReq = await fetch(`https://superheroapi.com/api.php/${api_key}/${params.id}`);
             const idRes = await idReq.json();
             setClickedData(idRes);
         } catch (error) {
