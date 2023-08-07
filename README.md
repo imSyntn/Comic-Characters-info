@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# comic-info
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Comic Info is a user-friendly web application built with React, which harnesses the power of the Superhero API to provide detailed information about superheroes and villains. Whether you're a comic enthusiast, a casual fan, or just curious, Comic Info is your gateway to explore and learn about the fascinating world of comic characters.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Search for superheroes and villains by name.
+- Display detailed information about each character, including their biography, power stats, appearance, and more.
+- See an image of the character to visually identify them.
+- User-friendly and responsive design for seamless browsing on desktop and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these instructions to set up the project locally on your machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (at least version 12)
+- npm (Node Package Manager) or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/comic-info.git
+```
 
-### `npm run eject`
+2. Change into the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd comic-info
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+or
 
-## Learn More
+```bash
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Run the development server:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+or
 
-### Analyzing the Bundle Size
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Open your browser and go to http://localhost:3000 to access the application.
 
-### Making a Progressive Web App
+3. Enter the name of your favorite superhero or villain in the search box and click on the search button to retrieve their information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies
 
-### Advanced Configuration
+* React
+* SuperHero API [https://superheroapi.com/]
+* Sass
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! If you find any issues or want to add new features, feel free to open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Please make sure to follow the code of conduct while contributing.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). You can find the full text of the license [here](https://creativecommons.org/licenses/by-nc/4.0/).
+
+### What does this license mean?
+
+The CC BY-NC 4.0 license allows you to:
+
+- **Share** — copy and redistribute the material in any medium or format.
+- **Adapt** — remix, transform, and build upon the material.
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+- **NonCommercial** — You may not use the material for commercial purposes. For commercial use or inquiries, please contact [imsyntn@gmail.com].
+
+### How to give attribution?
+
+When using or sharing this project, please provide proper attribution to the original creator. You can use the following format:
+
+"comic-info" by [Sayantan Sarkar] is licensed under CC BY-NC 4.0. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nc/4.0/legalcode].
+
+## Issues and Support
+
+[imsyntn@gmail.com]
+
+## Acknowledgments
+
+- Thanks to the creators and maintainers of the [Superhero API](https://superheroapi.com/) for providing the data used in this project.
+- The project utilizes icons from the [React Icons](https://react-icons.github.io/react-icons/) library, making the UI more engaging and intuitive.
