@@ -76,7 +76,7 @@ yarn start
 
 Contributions are welcome! If you find any issues or want to add new features, feel free to open an issue or submit a pull request.
 
-Please make sure to follow the code of conduct while contributing.
+Please make sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md) while contributing.
 
 ## License
 
