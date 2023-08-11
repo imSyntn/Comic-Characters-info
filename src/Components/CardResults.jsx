@@ -5,6 +5,10 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { useParams } from 'react-router-dom';
 import { SiPowerautomate } from "react-icons/si";
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
+
 const CardResults = () => {
     const[clickedData, setClickedData]=useState(null);
     const params = useParams();
@@ -200,8 +204,310 @@ const CardResults = () => {
                 </div>
             </>)
             :
+            // 
             (<>
-            <h1 className='please-wait'>Please wait...</h1>
+                <div className='img-before-load'>
+                    {<Skeleton style={{
+                    height: '493px',
+                    width: '362px'
+                    }} />}
+                </div>
+            
+                <div className="fetched-data">
+                    <div>
+                        {<Skeleton style={{
+                            height: '40px'
+                        }} />}
+                    </div>
+        
+                    <div className="fetched-data-details">
+                        <div className='id-class' id="Powerstats">
+                            <h2>{<Skeleton style={{
+                                width: '200px',
+                                height: '40px'
+                            }} />}</h2>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '102px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '30px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '83px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '30px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '66px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '30px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '78px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '30px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '65px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '30px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '82px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '30px'
+                                }} />}</p>
+                            </div>
+        
+                        </div>
+                        <div className='id-class' id="Biography">
+                            <h2>{<Skeleton style={{
+                                width: '200px',
+                                height: '40px'
+                            }} />}</h2>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '93px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '130px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '117px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '130px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '93.5px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '50px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '142px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '646px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '87px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '107px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '94px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '145px'
+                                }} />}</p>
+                            </div>
+                        </div>
+                        <div className='id-class' id="Appearance">
+                            <h2>{<Skeleton style={{
+                                width: '200px',
+                                height: '40px'
+                            }} />}</h2>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '73px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '46px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '88px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '46px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '93px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '46px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '57px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '133px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '67px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '35px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard'>
+                                <div className="ability-icon-name">
+
+                                    <p>{<Skeleton style={{
+                                                width: '71px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '48px'
+                                }} />}</p>
+                            </div>
+                        </div>
+                        <div className='id-class' id="Others">
+                            <h2>{<Skeleton style={{
+                                width: '200px',
+                                height: '40px'
+                            }} />}</h2>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '57px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '240px'
+                                }} />}</p>
+                            </div>
+                            <div className='AbilityCard-before'>
+                                <div className="ability-icon-name-before">
+                                    
+                                    <p>{<Skeleton style={{
+                                                width: '102px',
+                                                height: '19px'
+                                            }} />}
+                                    </p>
+                                </div>
+                                <p>{<Skeleton style={{
+                                    width: '240px'
+                                }} />}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </>)
         }
     </div>

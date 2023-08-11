@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { ImSearch } from "react-icons/im";
 import { useState, useEffect, createContext } from 'react';
 
@@ -36,10 +36,10 @@ const Header = () => {
     <DataContext.Provider value={data}>
     <div className='Header'>
         <h1>info</h1>
-        <div>
-              <input type="search" placeholder='eg. Ironman...' onChange={(e)=>setSearch(e.target.value)} />
+        <div >
+            <input type="search" placeholder='eg. Ironman...' onChange={(e)=>setSearch(e.target.value)} />
             <div>
-                <ImSearch onClick={initializeSearch} />
+                <Link to='/' onClick={initializeSearch}><ImSearch /></Link>
             </div>
         </div>
     </div>

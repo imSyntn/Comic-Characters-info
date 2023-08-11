@@ -45,14 +45,20 @@
             justify-content: center;
             transition: all 300ms;
 
-            > svg {
-                fill: red;
-                font-size: 21px;
-            }
+            > a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-            &:hover {
-                transform: scale(1.2);
-                cursor: pointer;
+                > svg {
+                    fill: red;
+                    font-size: 21px;
+                }
+    
+                &:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
             }
         }
     }

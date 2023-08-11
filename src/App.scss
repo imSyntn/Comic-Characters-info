@@ -17,6 +17,7 @@ a {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right bottom, #fef804, #ffce00, #ffa320, #ff793d, #ff5253, #f83a61, #ed206f, #dd007e, #c50084, #aa0089, #8d018c, #6c108d);
+    overflow-y: hidden;
 }
 ::-webkit-scrollbar {
 	width: 5px;

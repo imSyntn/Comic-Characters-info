@@ -172,13 +172,29 @@
     
         > a {
             position: fixed;
-            top: 108px;
+            top: 83px;
             left: 5%;
             z-index: 1;
         }
     }
 }
 
+.AbilityCard-before {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding-inline: 20px;
+
+    > .ability-icon-name-before {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+
+    
+    }
+}
 // @media screen and (max-width: 460px) {
 //     .CardResults {
 //         padding-inline: 0px;
