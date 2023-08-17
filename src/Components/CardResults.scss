@@ -33,6 +33,7 @@
         height: 493px;
         width: 362px;
         object-fit: cover;
+        border-radius: 20px;
     }
 
     > .fetched-data {
@@ -109,6 +110,10 @@
             fill: #FFBF26;
             margin-right: 5px;
         }
+    }
+    > p {
+        text-align: justify;
+        text-align-last: center;
     }
 }
 
@@ -195,9 +200,3 @@
     
     }
 }
-// @media screen and (max-width: 460px) {
-//     .CardResults {
-//         padding-inline: 0px;
-//         padding-block: 50px;
-//     }
-// }

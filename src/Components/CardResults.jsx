@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { useParams } from 'react-router-dom';
 import { SiPowerautomate } from "react-icons/si";
+import { motion } from 'framer-motion';
 
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -30,7 +31,19 @@ const CardResults = () => {
     },[params])
     
   return (
-    <div className='CardResults'>
+    <motion.div
+     initial={{
+        scale: 0,
+        opacity: 0.1,
+     }}
+     animate={{
+        scale: 1,
+        opacity: 1,
+     }}
+     transition={{
+        duration: 0.1,
+     }}
+     className='CardResults'>
         <Link to={'/'}>
             <BsFillArrowLeftCircleFill />
         </Link>
@@ -208,6 +221,7 @@ const CardResults = () => {
             (<>
                 <div className='img-before-load'>
                     {<Skeleton style={{
+                        borderRadius: '20px',
                     height: '493px',
                     width: '362px'
                     }} />}
@@ -510,7 +524,7 @@ const CardResults = () => {
                 </div>
             </>)
         }
-    </div>
+    </motion.div>
   )
 }
 

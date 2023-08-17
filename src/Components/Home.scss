@@ -5,6 +5,8 @@
     background-image: linear-gradient(to right bottom, #08041b, #131023, #1b182b, #232033, #2c273c, #2e273d, #2f283d, #31283e, #2b2136, #261b2f, #201527, #1b0e20);
     padding-bottom: 80px;
     box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s;
 }
 @media screen and (max-width: 527px) {
     .Home {
@@ -12,7 +14,6 @@
         width: 100%;
         border: none;
         border-radius: 0%;
-        // padding-top: 25px;
         overflow: hidden;
     }
 }
