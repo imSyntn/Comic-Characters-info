@@ -110,4 +110,3 @@ When using or sharing this project, please provide proper attribution to the ori
 - Thanks to the creators and maintainers of the [Superhero API](https://superheroapi.com/) for providing the data used in this project.
 - The project utilizes icons from the [React Icons](https://react-icons.github.io/react-icons/) library, making the UI more engaging and intuitive.
 - Special thanks to [Firebase](https://firebase.google.com/) for providing hosting services for this project, making it accessible to users.
-hii
